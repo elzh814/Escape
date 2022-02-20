@@ -81,7 +81,7 @@ img, .nodrag {
 }
 
 
-/* body {
+body {
     opacity: 1;
     transition-duration: 0.7s;
     transition-property: opacity;
@@ -95,7 +95,7 @@ body.fadeout {
     opacity: 0;
     transition-duration: 0.7s;
     transition-property: opacity;
-} */
+}
 
 #room0 {
     background-image: url(images/placeholders/room0BG.png)
