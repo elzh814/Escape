@@ -75,7 +75,7 @@ addInteractable(latchModal);
 addInteractable(inventory);
 inventory.onUseItem = (target) => {
     if (target === document.getElementById("board")) {
-        target.src = "images/placeholders/whiteboard.png";
+        target.src = "images/placeholders/whiteboard_empty.png";
         textBox.innerHTML = "Some of the writing won't erase...";
         inventory.itemUsed = true;
     }
