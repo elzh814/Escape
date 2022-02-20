@@ -88,7 +88,7 @@ body {
 }
 
 body.fade {
-    opacity: 0;
+    opacity: 1;
 }
 
 body.fadeout {
@@ -149,7 +149,7 @@ body.fadeout {
 
 #statue1 {
     position: fixed;
-    top: 26px;
+    top: 2px;
     left: 0;
 }
 
@@ -200,7 +200,7 @@ body.fadeout {
 
 #pinpad {
     position: fixed;
-    bottom: 200px;
+    bottom: 250px;
     left: 100px;
 }
 
