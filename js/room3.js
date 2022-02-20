@@ -63,7 +63,7 @@ class Room3Interactable extends Interactable {
                         document.getElementById("painting3").src = "";
                         portalOpen = true;
                         document.getElementById("room3").addEventListener('click', function(){
-                            window.location.replace("../room4.html");
+                            window.location.replace("room4.html");
                         });
                     } else {
                         field.placeholder = "Wrong, try again!";
