@@ -57,6 +57,7 @@ class Room2Interactable extends Interactable {
                 break;
             case 'coffee':
                 //transition to next page...
+                textBox.innerHTML = "Huh I can barely keepy my eyes open....";
                 document.body.classList.add('fadeout');
                 window.location.href = "room3.html";
                 break;
