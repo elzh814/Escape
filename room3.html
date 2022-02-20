@@ -8,7 +8,23 @@
     <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
-    <div class="frame"></div>
-    <button onclick="window.location.href='room4.html'">ROOM 4</button>
+    <div class="frame" id="table_top">
+        <img class="interactable" id="cutpaper" src="images/placeholders/paper_cut.png" width="450px">
+        <img class="interactable" id="message" src="images/placeholders/message.png" width="450px">
+        <button id="back">Back</button>
+    </div>
+    <div class="frame" id="room3">
+        <img class="interactable" id="sponser1" src="images/placeholders/mlhSponser.png"> 
+        <img class="interactable" id="sponser2" src="images/placeholders/ncrSponser.png">
+        <img class="interactable" id="paper" src="images/placeholders/paper.png" width="70px">
+        <img class="interactable" id="painting3" src="images/placeholders/room3Painting.png" width="250px">
+        <img id="inventory" src="" width="60">
+        <div class="nodrag" id="text">Seems oddly empty.</div>
+        <div id="container"></div>
+    </div>
+    <!-- <button onclick="window.location.href='room4.html'">ROOM 4</button> -->
+
+
 </body>
+<script type="module" src="/js/room3.js"></script>
 </html>

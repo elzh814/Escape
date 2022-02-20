@@ -2,7 +2,10 @@ html, body {
     width: 100%;
     height: 100%;
     margin: 0;
+    background-color: black;
+    overflow: hidden;
 }
+
 .frame {
     position: relative;
     height: 650px;
@@ -13,10 +16,251 @@ html, body {
     transform: translateY(-50%);
 }
 
-.inventory {
-    
+#text {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 20px;
+    width: 600px;
+    background-color: rgba(22, 22, 126, 0.247);
+    color: white;
 }
 
-.speech {
+#pinimg {
+    background-image: url('images/placeholders/pinpad.png');
+    background-repeat: no-repeat;
+    background-size: 400px 500px;
+    width : 400px;
+    height : 500px; 
+}
 
+#pinDisplay {
+    font-family: 'Press Start 2P';
+    position: fixed;
+    margin: inherit;
+    color: darkred;
+    position: fixed;
+    text-align: center;
+}
+
+.invisible-button {
+    position: fixed;
+    margin: inherit;
+    opacity: 0;
+    transform: translateX(620%);
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: hidden; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+    margin: 5% auto; /* 15% from the top and centered */
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+  
+
+/* stops highlighting from occuring */
+img, .nodrag {
+    -moz-window-dragging: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+
+body {
+    opacity: 1;
+    transition-duration: 0.7s;
+    transition-property: opacity;
+}
+
+body.fade {
+    opacity: 0;
+}
+
+body.fadeout {
+    opacity: 0;
+    transition-duration: 0.7s;
+    transition-property: opacity;
+}
+
+#room0 {
+    background-image: url(images/placeholders/room0BG.png)
+}
+#room1 {
+    background-image: url(images/placeholders/room1BG.png);
+}
+
+#room2 {
+    background-image: url(images/placeholders/room2BG.png);
+}
+
+#room3 {
+    background-image: url(images/placeholders/room3BG.png);
+}
+
+#room4 {
+    background-image: url(images/placeholders/room4BG.png);
+}
+
+#window {
+    position: fixed;
+    top: 20px;
+    left: 550px;
+}
+
+#board {
+    position: fixed;
+    left: 90px;
+    top: 60px;
+}
+
+#eraser {
+    position: fixed;
+    top: 230px;
+    left: 600px;
+    float: inline-start;
+}
+
+#latch {
+    position: fixed;
+    left: 500px;
+    top: 540px;
+}
+
+#inventory {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+#statue1 {
+    position: fixed;
+    top: 26px;
+    left: 0;
+}
+
+#statue2 {
+    position: fixed;
+    top: 0px;
+    right: 120px;
+    z-index: -2;
+}
+
+#banner {
+    position: fixed;
+    left: 0;
+    top: 450px;
+}
+
+#table {
+    position: fixed;
+    right: 300px;
+    bottom: 20px;
+}
+
+#chair {
+    position: fixed;
+    right: 180px;
+    bottom: 30px;
+    z-index: -1;
+}
+
+#credit {
+    position: fixed;
+    left: 300px;
+    bottom: 40px;
+    z-index: 0;
+}
+
+#painting {
+    position: fixed;
+    left: 520px;
+    top: 100px;
+    z-index: -3;
+}
+
+#clock {
+    position: fixed;
+    left: 400px;
+}
+
+#pinpad {
+    position: fixed;
+    bottom: 200px;
+    left: 100px;
+}
+
+#coffee {
+    position: fixed;
+    top: 350px;
+    left: 350px;
+}
+
+#sponser1 {
+    position: fixed;
+    bottom: 220px;
+    left: 150px;
+}
+
+#sponser2 {
+    position: fixed;
+    bottom: 220px;
+    left: 600px;
+}
+
+#paper {
+    position: fixed;
+    bottom: 40px;
+    left: 550px;
+}
+
+#table_top {
+    background-image: url("images/placeholders/tableTop.png");
+    z-index: -100;
+    height: 0;
+}
+
+#message {
+    position: fixed;
+    left: 600px;
+    bottom: 135px;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.315);
+    margin: 0;
+}
+
+#cutpaper {
+    position: fixed;
+    left: 700px;
+    bottom: 135px;
+    margin: 0;
+}
+
+#painting3 {
+    position: fixed;
+    right: 350px;
+    bottom: 200px;
+}
+
+#container {
+    font-family: 'Press Start 2P';
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.527);
+    color: white;
+    display: block;
+    right: 50%;
+    bottom: 50%;
 }

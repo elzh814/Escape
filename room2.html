@@ -6,9 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Room 2</title>
     <link rel="stylesheet" href="stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
-<body>
-    <div class="frame" id="room2"></div>
-    <button onclick="window.location.href='room3.html'">ROOM 3</button>
+<body class="fade">
+    <div class="frame" id="room2">
+        <img class="interactable" id="statue1" src="images/placeholders/statue1.png" width="400px">
+        <img class="interactable" id="statue2" src="images/placeholders/statue2.png" width="350px">
+        <img class="interactable" id="table" src="images/placeholders/table.png" width="400px">
+        <img class="interactable" id="credit" src="images/placeholders/credit_card.png">
+        <img class="interactable" id="banner" src="images/placeholders/banner.png" width="500px">
+        <img class="interactable" id="chair" src="images/placeholders/chair.png" width="250px">
+        <img class="interactable" id="clock" src="images/placeholders/clock.png">
+        <img class="interactable" id="painting" src="images/placeholders/wall_painting.png" width="500px">
+        <img class="interactable" id="pinpad" src="images/placeholders/pinpad.png" width="40px">
+        <img class="interactable" id="coffee" style="display: none;" src="images/placeholders/coffee_cup.png" width="60px">
+        <img id="inventory" src="" width="60">
+        <div class="nodrag" id="text">Smells like coffee and gasoline....</div>
+        <div class="modal" id="pinpadModal">
+            <div class="modal-content pos" id="pinimg">
+            </div>
+        </div>
+    </div>
+    <!-- <button onclick="window.location.href='room3.html'">ROOM 3</button> -->
 </body>
+<script type="module" src="/js/room2.js"></script>
 </html>

@@ -6,12 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Room 1</title>
     <link rel="stylesheet" href="stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
-<body>
+<body id="board1" class="fade">
     <div class="frame" id="room1">
-        <button id="testelement">test</button>
+        <img class="interactable" id="window" src="images/placeholders/window_closed.png">
+        <img class="interactable" id="eraser" src="" width="50">
+        <img class="interactable" id="board" src="images/placeholders/whiteboard_fill.png">
+        <img class="interactable" id="latch" src="images/placeholders/latch.png" width="250px">
+        <img id="inventory" src="" width="60">
+        <div class="nodrag" id="text">Something feels wrong....</div>
+        <div class="modal" id="latchModal">
+            <div class="modal-content pos" id="pinimg">
+            </div>
+        </div>
     </div>
-    <button onclick="window.location.href='room2.html'">ROOM 2</button>    
+    <!-- <button onclick="window.location.href='room2.html'">ROOM 2</button>     -->
 </body>
 <script type="module" src="/js/room1.js"></script>
 </html>
