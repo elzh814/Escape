@@ -9,9 +9,15 @@
 
 </head>
 <body>
-    <div class="frame" id="room0" onclick="window.location.href='room1.html'">
+    <div class="frame" id="room0" onclick=fade()>
     </div>
-    
+    <script>
+        function fade() {
+        document.body.classList.add('fadeout');
+        window.location.href = "room1.html";
+        }
+    </script>
+
 </body>
 <script type="module" src="/js/room0.js"></script>
 </html>
